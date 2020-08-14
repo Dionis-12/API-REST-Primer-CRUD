@@ -1,8 +1,8 @@
 from rest_framework import serializers
-from .models import ApiEmployer
+from .models import Employers
 
 # Creación del Primer Serializer
 class ApiEmployerSerializer(serializers.ModelSerializer):
 	class Meta:
-		model = ApiEmployer
+		model = Employers
 		fields = '__all__'

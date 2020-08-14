@@ -4,6 +4,6 @@ from . import models
 from . import serializers
 
 # Creación de la Priera Vista
-class ApiEmployerView(viewsets.ModelViewSet):
-	queryset = models.ApiEmployer.objects.all()
+class EmployersView(viewsets.ModelViewSet):
+	queryset = models.Employers.objects.all()
 	serializer_class = serializers.ApiEmployerSerializer
